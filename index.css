@@ -1,0 +1,63 @@
+.navbar-brand img {
+    width: 90px; /* Thay đổi kích thước theo ý muốn */
+    height: auto; /* Giữ tỷ lệ ảnh */
+    max-width: 100%; /* Đảm bảo ảnh không bị vỡ trên màn hình nhỏ */
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #e52b34f3 !important; /* Đổi màu nền thành đỏ */
+    color: white !important; /* Đổi màu chữ thành trắng để dễ nhìn */
+}
+
+.dropdown-menu .dropdown-item:active {
+    background-color: #e52b34f3 !important; /* Màu nền đỏ khi click */
+    color: white !important; /* Màu chữ trắng */
+    opacity: 0.7; /* Làm mờ một chút */
+}
+
+.nav-item .nav-link .shopping-cart {
+    margin: -5px 15px 0px 8px; /* Điều chỉnh khoảng cách trên-dưới (5px) và trái-phải (10px) */
+    width: 30px; /* Điều chỉnh kích thước ảnh nếu cần */
+}
+
+.custom-dropdown {
+    width: 10px; /* Điều chỉnh chiều rộng */
+    overflow-y: auto; /* Thêm cuộn nếu nội dung quá dài */
+    padding: 20px; /* Thêm khoảng cách bên trong */
+}
+
+
+/* shopping */
+.dropdown-menu {
+    width: 250px;
+    padding: 20px; 
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    margin: 10px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.quantity-control button {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+.quantity {
+    margin: 0 8px;
+}
