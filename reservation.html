@@ -22,6 +22,57 @@
 	<link rel="stylesheet" href="index.css">
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		.left-column h1,h2{
+			color: white;
+		}
+
+        .job-list {
+            list-style: none;
+            padding: 0;
+        }
+        .job-list li {
+            background: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .job-list li:hover {
+            background: #e0e0e0;
+        }
+        .job-detail {
+            display: none;
+            padding: 15px;
+            background: #f1f1f1;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        form {
+            margin-top: 20px;
+        }
+		.apply-form label{
+			color: white;
+		}
+        input, textarea, button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #ffae00;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #ff8c00;
+        }
+    </style>
+
 </head>
 <body>
 	
@@ -99,64 +150,207 @@
 		<div class="container">
 			<div class="row no-gutters">
 				<div class="col-sm-12 p-4 p-md-5 d-flex align-items-center justify-content-center bg-primary">
-					<form action="#" class="appointment-form">
-						<h3 class="mb-3">Book your Table</h3>
-						<div class="row justify-content-center">
-							<div class="col-md-4">
-								<div class="form-group">
-									<input type="name" class="form-control" placeholder="Name">
-								</div>
+					<div class="left-column">
+						<h1>Việc Làm H2GO Sip&Slow</h1>
+						<ul class="job-list">
+							<li onclick="showDetail('job1')">Nhân viên bán hàng</li>
+							<div id="job1" class="job-detail">
+								<p><strong>Mô tả công việc:</strong></p>
+							<ul>
+							<li><strong>1. Nhận đơn hàng và đề xuất bán hàng:</strong>
+							<ul>
+								<li>Chào khách, nhận đơn và hướng dẫn khách đặt hàng, gợi ý thêm món phù hợp, thể hiện thái độ thân thiện, nhiệt tình, chuyên nghiệp.</li>
+								<li>Thông báo số tiền cần thanh toán, tư vấn phương thức thanh toán phù hợp, xử lý thanh toán, cảm ơn và thông báo khách hàng về thời gian chờ.</li>
+								<li>Gợi ý bán hàng: món mới, món bán kèm, chương trình khuyến mãi, cà phê đóng gói, bình giữ nhiệt, v.v.</li>
+								<li>Giải đáp thắc mắc của khách hàng chính xác, lịch sự, đảm bảo hiểu rõ về sản phẩm.</li>
+								<li>Sử dụng thành thạo hệ thống bán hàng.</li>
+								<li>Giải quyết các khiếu nại hoặc phản hồi của khách hàng một cách chuyên nghiệp, nhanh chóng thông báo cho Quản lý Cửa hàng.</li>
+								<li>Hướng dẫn khách hàng đến khu vực thực hiện quy trình đặt hàng.</li>
+							</ul>
+							</li>
+							<li><strong>2. Kiểm soát doanh thu:</strong>
+							<ul>
+								<li>Tổng hợp doanh thu bán hàng và báo cáo cho Quản lý Cửa hàng khi kết ca.</li>
+								<li>Kiểm soát tiền mặt tại cửa hàng và bàn giao cho Quản lý khi kết ca.</li>
+								<li>Thực hiện các công việc liên quan tới đóng/mở quán.</li>
+								<li>Hỗ trợ bảo trì, bảo dưỡng, đảm bảo quầy hàng sạch sẽ.</li>
+							</ul>
+							</li>
+							</ul>
+								<p><strong>Yêu cầu công việc:</strong></p>
+							<ul>
+							   <li>Kỹ năng giao tiếp tốt, có kinh nghiệm là lợi thế.</li>
+							   <li>Tuổi: Từ 18 tuổi trở lên.</li>
+							   <li>Học vấn: Có bằng cấp 3, ưu tiên Sinh viên Đại học/ Cao đẳng, không phân biệt chuyên ngành.</li>
+							   <li>Đang theo học Chuyên ngành Marketing/ Kinh Doanh/ Quản trị Nhà hàng/ Khách sạn/ Khoa học Thực phẩm là lợi thế.</li>
+							   <li>Giờ làm việc: Bán thời gian/ Toàn thời gian.</li>
+							</ul>
 							</div>
-							<div class="col-md-4">
-								<div class="form-group">
-									<input type="email" class="form-control" placeholder="Email">
-								</div>
+				
+							<li onclick="showDetail('job2')">Nhân viên tạp vụ</li>
+							<div id="job2" class="job-detail">
+								<p><strong>Mô tả công việc:</strong></p>
+							<ul>
+							<li><strong>1. Đảm bảo vệ sinh cửa hàng:</strong>
+							<ul>
+								<li>Quét, lau dọn sàn, tường và các khu vực khác của cửa hàng theo phân công của quản lý.</li>
+								<li>Giữ vệ sinh khu vực toilet của khách hàng và nhân viên luôn sạch sẽ, khô ráo, trang bị đầy đủ giấy cuộn, xà bông rửa tay và thơm mát.</li>
+								<li>Chịu trách nhiệm đặt dụng cụ vệ sinh như giấy vệ sinh, chổi, nước lau nhà, xà bông, cây lau nhà.</li>
+								<li>Đảm bảo chất lượng vệ sinh các khu vực như sảnh phục vụ khách, toilet, kiểm tra và quét dọn định kỳ mỗi 10 phút hoặc sau giờ đông khách.</li> 
+							</ul>
+							</li>
+							<li><strong>2. Hỗ trợ các công việc khác:</strong>
+							<ul>
+								<li>Hỗ trợ bộ phận bếp (nhặt rau, rửa chén).</li>
+								<li>Thực hiện các công việc phụ khác theo sự chỉ đạo của Quản lý Cửa hàng.</li>
+							</ul>
+							</li>
+							</ul>
+								<p><strong>Yêu cầu công việc:</strong></p>
+							<ul>
+							   <li>Trình độ học vấn: Có thể đọc và viết thành thạo tiếng Việt.</li>
+							   <li>Thời gian làm việc: Làm việc theo ca hoặc theo giờ.</li>
+							   <li>Siêng năng, trung thực, cẩn thận.</li>
+							   <li>Nhiệt tình trong công việc.</li>       
+							</ul>
 							</div>
-							<div class="col-md-4">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Phone">
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="form-group">
-									<div class="input-wrap">
-										<div class="icon"><span class="fa fa-calendar"></span></div>
-										<input type="text" class="form-control book_date" placeholder="Check-In">
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="form-group">
-									<div class="input-wrap">
-										<div class="icon"><span class="fa fa-clock-o"></span></div>
-										<input type="text" class="form-control book_time" placeholder="Time">
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="form-group">
-									<div class="form-field">
-										<div class="select-wrap">
-											<div class="icon"><span class="fa fa-chevron-down"></span></div>
-											<select name="" id="" class="form-control">
-												<option value="">Guest</option>
-												<option value="">1</option>
-												<option value="">2</option>
-												<option value="">3</option>
-												<option value="">4</option>
-												<option value="">5</option>
-											</select>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="form-group">
-									<input type="submit" value="Book Your Table Now" class="btn btn-white py-3 px-4">
-								</div>
-							</div>
+				
+							
+							<li onclick="showDetail('job3')">Nhân viên pha chế</li>
+							<div id="job3" class="job-detail">
+								<p><strong>Mô tả công việc:</strong></p>
+							<ul>
+							<li><strong>1. Chuẩn bị thức uống & Quản lý chất lượng sản phẩm:</strong>
+							<ul>
+							   <li>Chuẩn bị các loại thức uống đúng quy trình, công thức, quy định và tiêu chuẩn về chất lượng.</li>
+							   <li>Đảm bảo tiêu chuẩn nhất quán trong từng ly nước, đúng thời gian, duy trì sự hài lòng của khách hàng.</li>
+							   <li>Đảm bảo tuân thủ hạn sử dụng của sản phẩm, báo cáo các sản phẩm bị hỏng hoặc hết hạn.</li>
+							   <li>Kiểm soát chất lượng hàng hóa nhập kho hàng ngày.</li>
+							</ul>
+							</li>
+							<li><strong>2. Quản lý tồn kho & trang thiết bị:</strong>
+							<ul>
+							   <li>Kiểm tra kho, báo cáo số lượng hàng hóa theo ngày & theo tháng.</li>
+							   <li>Đảm bảo nhận đủ hàng, nguyên vật liệu, trang thiết bị.</li>
+							   <li>Duy trì khu vực vực làm việc, công cụ, máy móc, và các thiết bị liên quan luôn sạch sẽ.</li>
+							   <li>Đảm bảo tuân thủ lịch trình bảo dưỡng thiết bị tại quầy chế biến.</li>
+							</ul>
+							</li>
+							</ul>
+								<p><strong>Yêu cầu công việc:</strong></p>
+							<ul>
+							   <li>Tuổi: Từ 18 tuổi trở lên.</li>
+							   <li>Học vấn: Có bằng cấp 3, ưu tiên Sinh viên Đại học/ Cao đẳng, không phân biệt chuyên ngành. Đang theo học Chuyên ngành Marketing/ Kinh Doanh/ Quản trị Nhà hàng/ Khách sạn/ Khoa học Thực phẩm là lợi thế.</li>
+							   <li>Giờ làm việc: Toàn thời gian/ Bán thời gian.</li>
+							</ul>
 						</div>
-					</form>
+				
+					
+							<li onclick="showDetail('job4')">Nhân viên bảo vệ</li>
+							<div id="job4" class="job-detail">
+								<p><strong>Mô tả công việc:</strong></p>
+							<ul>
+							<li><strong>1. Đảm bảo An toàn & Tài sản của Khách hàng:</strong>
+							<ul>
+							   <li>Chào đón và hướng dẫn khách hàng vào quán.</li>
+							   <li>Sắp xếp xe, đảm bảo an ninh trong khu vực đỗ xe và khuôn viên cửa hàng.</li>
+							   <li>Hướng dẫn khách hàng bảo quản tài sản cá nhân, quy định đỗ xe.</li>
+							   <li>Tuân thủ nghiêm ngặt các quy định về an ninh tại cửa hàng trước, trong và sau ca làm.</li>
+							   <li>Để ý nhân viên và khách hàng ra vào cửa hàng để đảm bảo an toàn.</li>
+							   <li>Thường xuyên kiểm tra tài sản của quán, báo cáo các hư hỏng hoặc thất lạc.</li>
+							</ul>
+							</li>
+							<li><strong>2. Thực hiện các nhiệm vụ hằng ngày:</strong>
+							<ul>
+							   <li>Xử lý các vấn đề và mâu thuẫn nếu có.</li>
+							   <li>Đưa ra các giải pháp để cải thiện an ninh tại quán.</li>
+							   <li>Thực hiện các công việc liên quan tới đóng/mở quán.</li>
+							   <li>Hỗ trợ về an ninh ở các khu vực hoặc phòng ban khác khi cần.</li>
+							</ul>
+							</li>
+							</ul>
+								<p><strong>Yêu cầu công việc:</strong></p>
+							<ul>
+							   <li>Tuổi: Từ 18 đến 55 tuổi.</li>
+							   <li>Học vấn: Tốt nghiệp THCS.</li>
+							   <li>Giờ làm việc: Toàn thời gian/ Bán thời gian.</li>
+							</ul>
+						</div>
+				
+							<li onclick="showDetail('job5')">Quản lý cửa hàng</li>
+							<div id="job5" class="job-detail">
+								<p><strong>Mô tả công việc:</strong></p>
+							<ul>
+							<li><strong>1. Lấy khách hàng làm trọng tâm:</strong>
+							<ul>
+							   <li>Ưu tiên khách hàng: Luôn lắng nghe và đặt sự hài lòng của khách hàng làm ưu tiên để không ngừng cải tiến chất lượng dịch vụ.</li>
+							   <li>Luôn tương tác & hỗ trợ khách hàng.</li>
+							   <li>Giám sát các hoạt động của cửa hàng trong ca làm, đảm bảo mang lại trải nghiệm tốt nhất cho khách hàng.</li>
+							   <li>Thành thạo trong việc thu thập, phân tích và đưa ra hành động dựa trên phản hồi của khách hàng nhằm mang lại trải nghiệm tốt hơn cho khách.</li>
+							</ul>
+							</li>
+							<li><strong>2. Quản lý Nhân viên:</strong>
+							<ul>
+							   <li>Sắp xếp lịch làm việc và quản lý hoạt động của cửa hàng.</li>
+							   <li>Giám sát tất cả hoạt động trong ca làm, đảm bảo nhân viên tuân thủ các quy định và quy trình của công ty (tiêu chuẩn BFSCE, tác phong, đồng phục…).</li>
+							   <li>Lập báo cáo theo yêu cầu (hàng ngày, hàng tuần, hàng tháng).</li>
+							   <li>Đánh giá hiệu suất làm việc của nhân viên và xây dựng kế hoạch phát triển cho từng cá nhân.</li>
+							   <li>Tuyển dụng nhân sự phù hợp, tổ chức đào tạo về kiến thức và kỹ năng chuyên môn cho nhân viên.<li>
+							   <li>Xây dựng văn hóa làm việc nhóm phù hợp với văn hóa làm việc của công ty.<li>
+							</ul>
+							<li><strong>3. Tăng trưởng Doanh số và Quản lý Doanh thu:</strong>
+							<ul>
+								<li>Thực hiện các hoạt động marketing theo yêu cầu. Đề xuất các chương trình phù hợp tại cửa hàng để tăng lượt mua của khách hàng hiện tại và thu hút thêm khách hàng mới.</li>
+								<li>Thúc đẩy doanh số và kiểm soát chi phí vận hành của cửa hàng để đạt được các chỉ tiêu về doanh thu hàng tháng, P&L (báo cáo lãi lỗ) và các chỉ số khác.</li>
+								<li>Quản lý tồn kho, lên kế hoạch đặt hàng và xử lý hàng tồn.</li>
+								<li>Đảm bảo doanh thu hàng tháng, P&L (báo cáo lãi lỗ) và các chỉ số liên quan.</li>
+								<li>Kiểm soát chi phí bán hàng, nhân công, tồn kho và các chi phí khác.<li>
+							</ul>
+							</li>
+							</li>
+							</ul>
+								<p><strong>Yêu cầu công việc:</strong></p>
+							<ul>
+							   <li>Tuổi: Từ 21 trở lên.</li>
+							   <li>Học vấn: Tốt nghiệp cử nhân chuyên ngành Quản trị Kinh doanh/ Quản trị Dịch vụ hoặc các ngành có liên quan.</li>
+							   <li>Kinh nghiệm: Tối thiểu 1 năm trong lĩnh vực Bán lẻ/ Thức ăn & Đồ uống/ Dịch vụ hoặc tối thiểu 6 tháng kinh nghiệm quản lý đội nhóm, trong đó ít nhất 6 tháng ở vị trí tiếp xúc trực tiếp với khách hàng.</li>
+							</ul>
+						</div>
+				
+				
+						<div class="right-column"></div>
+						<h2>Thông tin ứng tuyển</h2>
+						<form class="apply-form" id="apply-form">
+							<input type="text" placeholder="Họ và Tên" required>
+							<input type="text" placeholder="CMND/CCCD" required>
+							<input type="text" placeholder="Số điện thoại" required>
+							<input type="email" placeholder="Email" required>
+							<label for="job-select">Công việc ứng tuyển:</label>
+							<select id="job-select" name="job" required>
+							   <option value="" disabled selected>Chọn vị trí</option>
+							   <option value="ban-hang">Nhân viên bán hàng</option>
+							   <option value="tap-vu">Nhân viên tạp vụ</option>
+							   <option value="pha-che">Nhân viên pha chế</option>
+							   <option value="bao-ve">Nhân viên bảo vệ</option>
+							   <option value="quan-ly">Quản lý cửa hàng</option>
+							</select>
+							<p>
+							<label for="cv-upload">Tải lên CV (PDF):</label><p>
+							<input type="file" id="cv-upload" name="cv" accept=".pdf" required>
+				
+							<button type="submit">Ứng tuyển ngay</button>
+						</form>
+						</div>
+					<script>
+						function showDetail(id) {
+							var detail = document.getElementById(id);
+				if (detail.style.display === "none" || detail.style.display === "") {
+								detail.style.display = "block";
+							} else {
+								detail.style.display = "none";
+							}
+						}
+					</script>
 				</div>
 			</div>
 		</div>
