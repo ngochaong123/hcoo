@@ -20,6 +20,15 @@ body {
 	margin: -20px 0 50px;
 }
 
+.bgLogin {
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
 h1 {
 	font-weight: bold;
 	margin: 0;
