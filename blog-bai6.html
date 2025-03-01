@@ -22,6 +22,23 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .img-hover {
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .img-hover:hover {
+      transform: scale(1.05);
+    }
+  
+    blockquote {
+      font-style: italic;
+      color: #555;
+      padding: 10px 20px;
+      border-left: 4px solid #007bff;
+      margin: 20px 0;
+    }
+  </style>
 </head>
 <body>
 
@@ -38,7 +55,7 @@
     <ul class="navbar-nav ml-auto">
       <li class="nav-item"><a href="about.html" class="nav-link">Về chúng tôi</a></li>
       <li class="nav-item"><a href="menu.html" class="nav-link">Thực đơn</a></li>
-      <li class="nav-item"><a href="blog.html" class="nav-link">Tin tức</a></li>
+      <li class="nav-item active"><a href="blog.html" class="nav-link">Tin tức</a></li>
       <li class="nav-item"><a href="reservation.html" class="nav-link">Tuyển dụng</a></li>
       <li class="nav-item"><a href="booking.html" class="nav-link">Đặt bàn</a></li>
       <li class="nav-item dropdown">
@@ -50,7 +67,7 @@
           <a class="dropdown-item" href="profile.html">Trang cá nhân</a>
         </div>
       </li>
-      <li class="nav-item active"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
       <li class="nav-item dropdown">
         <a href="#" class="nav-link dropdown-toggle" id="cartDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <img src="images/shopping-cart-24.png" alt="Cart" class="shopping-cart">
@@ -87,72 +104,38 @@
   <div class="container">
     <div class="row no-gutters slider-text align-items-end justify-content-center">
       <div class="col-md-9 ftco-animate text-center mb-5">
-        <h1 class="mb-2 bread">Liên hệ</h1>
-        <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Thực đơn <i class="fa fa-chevron-right"></i></a></span> <span>Đặt bàn <i class="fa fa-chevron-right"></i></span></p>
+        <h1 class="mb-2 bread">Tin tức</h1>
+        <p class="breadcrumbs">
+          <span class="mr-2"><a href="index.html">Thực đơn <i class="fa fa-chevron-right"></i></a></span> 
+          <span> <a href="blog-bai1.html" class="read-more">Tin tức</a> <i class="fa fa-chevron-right"></i></span>
+          <span><a href="" class="read-more"> Đọc thêm</a></span>
+        </p>      
       </div>
     </div>
   </div>
 </section>
 
-<section class="ftco-section contact-section bg-light">
-  <div class="container">
-    <div class="row d-flex contact-info">
-      <div class="col-md-12">
-        <h2 class="h4 font-weight-bold">Thông tin liên lạc</h2>
+<section class="ftco-section bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Cột ảnh bên trái -->
+        <div class="col-md-6">
+          <img src="images/Picture6.png" alt="Không gian quán cà phê" class="img-fluid img-hover">
+        </div>
+        <!-- Cột văn bản bên phải -->
+        <div class="col-md-6">
+          <h2>Không gian quán cà phê và sự tinh tế</h2>
+          <p>
+            Không gian quán cà phê không chỉ đẹp mà còn cần tạo được sự kết nối với khách hàng. Những góc ngồi thoải mái, bàn ghế được sắp xếp hợp lý để phù hợp với từng nhóm khách, từ người làm việc cá nhân đến những buổi gặp mặt bạn bè. Những chi tiết nhỏ như giá sách, cây xanh hay những dòng chữ trích dẫn truyền cảm hứng cũng giúp không gian trở nên đặc biệt hơn.
+          </p>
+          <h2>Chốn lý tưởng để học tập và làm việc</h2>
+          <p>
+            Với Wi-Fi mạnh, ổ cắm điện đầy đủ và không gian yên tĩnh, quán cà phê là lựa chọn lý tưởng cho sinh viên, freelancer và những người làm việc từ xa. Tiếng nhạc nhẹ nhàng cùng mùi hương cà phê giúp tăng khả năng tập trung, tạo động lực làm việc hiệu quả hơn.
+          </p>
+        </div>
       </div>
-      <div class="w-100"></div>
-      <div class="col-md-3 d-flex">
-       <div class="dbox">
-         <p><span>Đia chỉ:</span> 125 Phan Chu Trinh, P.2, Tp. Vũng Tàu</p>
-       </div>
-     </div>
-     <div class="col-md-3 d-flex">
-       <div class="dbox">
-         <p><span>SĐT:</span> <a href="tel://1234567920">084759855</a></p>
-       </div>
-     </div>
-     <div class="col-md-3 d-flex">
-       <div class="dbox">
-         <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-       </div>
-     </div>
-     <div class="col-md-3 d-flex">
-       <div class="dbox">
-         <p><span>Website</span> <a href="#">yoursite.com</a></p>
-       </div>
-     </div>
-   </div>
- </div>
-</section>
-<section class="ftco-section ftco-no-pt contact-section">
- <div class="container">
-  <div class="row d-flex align-items-stretch no-gutters">
-   <div class="col-md-6 p-5 order-md-last">
-    <h2 class="h4 mb-5 font-weight-bold">Liên hệ với chúng tôi</h2>
-    <form action="#">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Họ tên">
-      </div>
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Email">
-      </div>
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Tiêu đề">
-      </div>
-      <div class="form-group">
-        <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Tin nhắn"></textarea>
-      </div>
-      <div class="form-group">
-        <input type="submit" value="Gửi tín nhắn" class="btn btn-primary py-3 px-5">
-      </div>
-    </form>
-  </div>
-  <div class="col-md-6 d-flex align-items-stretch">
-    <div id="map"></div>
-  </div>
-  </div>
-</div>
-</section>
+    </div>
+</section>  
 
 <footer class="ftco-footer ftco-no-pb ftco-section">
   <div class="container">
