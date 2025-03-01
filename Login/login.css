@@ -29,6 +29,15 @@ h2 {
 	text-align: center;
 }
 
+.bgLogin{
+	background-image: url(../images/bg.jpg);
+    background-size: cover; /* Đảm bảo ảnh phủ toàn bộ khung */
+    background-position: center; /* Căn giữa ảnh */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+    height: 100vh; /* Đảm bảo chiếm toàn bộ chiều cao màn hình */
+    width: 50%; /* Đảm bảo chiếm toàn bộ chiều rộng */
+}
+
 p {
 	font-size: 14px;
 	font-weight: 100;
