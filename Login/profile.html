@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The H2GO</title>
+    <!---Tệp CSS Tuỳ Chỉnh--->
+    <link rel="stylesheet" href="profile.css" />
+    <!-- Thư viện Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <section class="container">
+        <header>Thông tin cá nhân</header>
+        <form action="#" class="form" id="profileForm">
+            <div class="input-box">
+                <label>Họ và Tên</label>
+                <input type="text" id="fullName" placeholder="Nhập họ và tên" required />
+            </div>
+
+            <div class="input-box">
+                <label>Địa Chỉ Email</label>
+                <input type="text" id="email" placeholder="Nhập email" required />
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label>Số Điện Thoại</label>
+                    <input type="number" id="phone" placeholder="Nhập số điện thoại" required />
+                </div>
+                <div class="input-box">
+                    <label>Ngày Sinh</label>
+                    <input type="date" id="birthDate" required />
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label>Mật Khẩu</label>
+                <div class="password-wrapper">
+                    <input type="password" id="passwordInput" placeholder="Nhập mật khẩu" required />
+                    <i class="fa-solid fa-eye toggle-password" onclick="togglePassword()"></i>
+                </div>
+            </div>
+
+            <div class="gender-box">
+                <h3>Giới Tính</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" value="Nam" />
+                        <label for="check-male">Nam</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender" value="Nữ" />
+                        <label for="check-female">Nữ</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender" value="Khác" />
+                        <label for="check-other">Không muốn tiết lộ</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" onclick="saveProfile()">Lưu Thông Tin</button>
+        </form>
+    </section>
+
+    <script src="profile.js"></script>
+    <script>
+        function togglePassword() {
+            let passwordInput = document.getElementById("passwordInput");
+            let toggleIcon = document.querySelector(".toggle-password");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                toggleIcon.classList.remove("fa-eye");
+                toggleIcon.classList.add("fa-eye-slash");
+            } else {
+                passwordInput.type = "password";
+                toggleIcon.classList.remove("fa-eye-slash");
+                toggleIcon.classList.add("fa-eye");
+            }
+        }
+    </script>
+</body>
+</html>
