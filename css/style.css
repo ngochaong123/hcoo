@@ -5542,7 +5542,7 @@ a.close.disabled {
   vertical-align: text-top !important; }
 
 .bg-primary {
-  background-color: #007bff !important; }
+  background-color: #FFE703 !important; }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
@@ -9268,8 +9268,11 @@ textarea.form-control {
   opacity: 0;
   visibility: hidden; }
 
+.bg-primarys {
+  background: #FFF700 !important; }
+
 .bg-primary {
-  background: #e52b34 !important; }
+  background: #E52B34 !important; }
 
 .about-author .desc h3 {
   font-size: 24px; }
