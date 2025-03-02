@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+    background-image: url("images/bg-payment.jpg");
+    background-size: cover; /* Căn chỉnh kích thước ảnh */
+    background-position: center; /* Canh giữa ảnh */
+    background-repeat: no-repeat; /* Không lặp ảnh */
+}
+
+h3, h4 {
+    color: #333;
+}
+
+.bg_payment{
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.btn-payment {
+    background-color: #28a745 !important;  /* Màu xanh lá */
+    color: white !important;  /* Chữ trắng */
+    border: none !important;
+    padding: 10px 20px !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    text-align: center !important;
+    display: block !important;
+}
+
+.btn-payment:hover {
+    background-color: #218838 !important;  /* Màu đậm hơn khi hover */
+}
+
+
+.cart-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.cart-summary {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.cart-summary .total-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn-checkout {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-checkout:hover {
+    background-color: #218838;
+}
+
+.product-img {
+    max-width: 110px;
+    border-radius: 5px;
+}
+
+.qty-btn {
+    background: none;
+    color: black !important; 
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.qty-btn:hover {
+    opacity: 0.7;
+}
+
+.btn-danger {
+    background: #ff4d4d;
+}
+
+.btn-danger:hover {
+    background: #cc0000;
+}

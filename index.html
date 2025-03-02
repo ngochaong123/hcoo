@@ -58,30 +58,10 @@
 						</div>
 					</li>
 					<li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
-					<li class="nav-item dropdown">
-						<a href="#" class="nav-link dropdown-toggle" id="cartDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<li class="nav-item">
+						<a href="shopping-cart.html" class="nav-link" id="cartDropdown">
 							<img src="images/shopping-cart-24.png" alt="Cart" class="shopping-cart">
 						</a>
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="cartDropdown">
-							<div class="cart-item">
-								<p>Item 1</p>
-								<div class="quantity-control">
-									<button class="btn btn-sm btn-outline-secondary decrease">-</button>
-									<span class="quantity">1</span>
-									<button class="btn btn-sm btn-outline-secondary increase">+</button>
-								</div>
-							</div>
-							<div class="cart-item">
-								<p>Item 2</p>
-								<div class="quantity-control">
-									<button class="btn btn-sm btn-outline-secondary decrease">-</button>
-									<span class="quantity">1</span>
-									<button class="btn btn-sm btn-outline-secondary increase">+</button>
-								</div>
-							</div>
-							<div class="dropdown-divider"></div>
-							<button class="btn btn-primary btn-block">Thanh toán</button>
-						</div>
 					</li>									
 				</ul>
 			</div>
@@ -231,7 +211,7 @@
 						<div class="heading-menu text-center ftco-animate">
 							<h3>Khuyến mại</h3>
 						</div>
-						<div class="menus d-flex ftco-animate">
+						<div class="menus d-flex ftco-animate" onclick="addToCart('Bánh sừng bò hạnh nhân', 29000, 'images/menu/BANH/Almond Croissant.png')">
 							<div class="menu-img img" style="background-image: url(images/menu/BANH/Almond\ Croissant.png);"></div>
 							<div class="text">
 								<div class="d-flex">
@@ -242,10 +222,10 @@
 										<span class="price">29.000đ</span>
 									</div>
 								</div>
-								<p><span>Bánh sừng bò</span>, <span>hạch nhân</span></p>
+								<p><span>Bánh sừng bò</span>, <span>hạnh nhân</span></p>
 							</div>
 						</div>
-						<div class="menus d-flex ftco-animate">
+						<div class="menus d-flex ftco-animate" onclick="addToCart('Bánh trái cây', 30000, 'images/menu/BANH/Fruit Pastry.jpg')">
 							<div class="menu-img img" style="background-image: url(images/menu/BANH/Fruit\ Pastry.jpg);"></div>
 							<div class="text">
 								<div class="d-flex">
@@ -259,12 +239,13 @@
 								<p><span>Bánh ngọt</span>, <span>dâu</span>, <span>kem</span></p>
 							</div>
 						</div>
-						<div class="menus border-bottom-0 d-flex ftco-animate">
+				
+						<div class="menus border-bottom-0 d-flex ftco-animate" onclick="addToCart('Mousse chanh dừa', 80000, 'images/menu/BANH/MOUSSE PASSION FRUIT.png')">
 							<div class="menu-img img" style="background-image: url(images/menu/BANH/MOUSSE\ PASSION\ FRUIT.png);"></div>
 							<div class="text">
 								<div class="d-flex">
 									<div class="one-half">
-										<h3>MOUSSE CHANH DƯA</h3>
+										<h3>Mousse chanh dừa</h3>
 									</div>
 									<div class="one-forth">
 										<span class="price">80.000đ</span>
@@ -281,7 +262,7 @@
 						<div class="heading-menu text-center ftco-animate">
 							<h3>best seller</h3>
 						</div>
-						<div class="menus d-flex ftco-animate">
+						<div class="menus d-flex ftco-animate" onclick="addToCart('Cà phê Latte', 25000, 'images/menu/CAFFE/Cafe Latte.png')">
 							<div class="menu-img img" style="background-image: url(images/menu/CAFFE/Cafe\ Latte.png);"></div>
 							<div class="text">
 								<div class="d-flex">
@@ -295,7 +276,7 @@
 								<p><span>Cà phê</span>, <span>sữa bò</span></p>
 							</div>
 						</div>
-						<div class="menus d-flex ftco-animate">
+						<div class="menus d-flex ftco-animate" onclick="addToCart('Cà phê Mocha', 25000, 'images/menu/CAFFE/Cafe Mocha.png')">
 							<div class="menu-img img" style="background-image: url(images/menu/CAFFE/Cafe\ Mocha.png);"></div>
 							<div class="text">
 								<div class="d-flex">
@@ -309,7 +290,8 @@
 								<p><span>Cà phê</span>, <span>Mocha</span></p>
 							</div>
 						</div>
-						<div class="menus border-bottom-0 d-flex ftco-animate">
+						
+						<div class="menus border-bottom-0 d-flex ftco-animate" onclick="addToCart('Latte hoa oải hương', 29000, 'images/menu/CAFFE/Lavender Latte.png')">
 							<div class="menu-img img" style="background-image: url(images/menu/CAFFE/Lavender\ Latte.png);"></div>
 							<div class="text">
 								<div class="d-flex">
@@ -331,7 +313,7 @@
 						<div class="heading-menu text-center ftco-animate">
 							<h3>Sắp ra mắt</h3>
 						</div>
-						<div class="menus d-flex ftco-animate">
+						<div class="menus d-flex ftco-animate" onclick="addToCart('Kem than tre', 50000, 'images/menu/KEM/BAMBOO CHARCOAL CREAM.png')">
 							<div class="menu-img img" style="background-image: url(images/menu/KEM/BAMBOO\ CHARCOAL\ CREAM.png);"></div>
 							<div class="text">
 								<div class="d-flex">
@@ -342,10 +324,11 @@
 										<span class="price">50.000đ</span>
 									</div>
 								</div>
-								<p><span>Kem</span>, <span>tre</span></p>
+								<p><span>Kem</span>, <span>than tre</span></p>
 							</div>
 						</div>
-						<div class="menus d-flex ftco-animate">
+				
+						<div class="menus d-flex ftco-animate" onclick="addToCart('Kem dừa lạnh', 60000, 'images/menu/KEM/COCONUT ICE CREAM.png')">
 							<div class="menu-img img" style="background-image: url(images/menu/KEM/COCONUT\ ICE\ CREAM.png);"></div>
 							<div class="text">
 								<div class="d-flex">
@@ -356,21 +339,22 @@
 										<span class="price">60.000đ</span>
 									</div>
 								</div>
-								<p><span>Kem</span>, <span>dừa lạnh</span></p>
+								<p><span>Kem</span>, <span>dừa</span></p>
 							</div>
 						</div>
-						<div class="menus border-bottom-0 d-flex ftco-animate">
+				
+						<div class="menus border-bottom-0 d-flex ftco-animate" onclick="addToCart('Kem bubble', 70000, 'images/menu/KEM/BUBBLE ICE CREAM.png')">
 							<div class="menu-img img" style="background-image: url(images/menu/KEM/BUBBLE\ ICE\ CREAM.png);"></div>
 							<div class="text">
 								<div class="d-flex">
 									<div class="one-half">
-										<h3>kem bubble</h3>
+										<h3>Kem bubble</h3>
 									</div>
 									<div class="one-forth">
 										<span class="price">70.000đ</span>
 									</div>
 								</div>
-								<p><span>kem</span>, <span>bubble</span></p>
+								<p><span>Kem</span>, <span>bubble</span></p>
 							</div>
 						</div>
 					</div>
@@ -617,6 +601,21 @@
 			</div>
 		</div>
 		<div class="container-fluid px-0 bg-primary py-3">
+		<script>
+			function addToCart(name, price, image) {
+				let cart = JSON.parse(localStorage.getItem("cart")) || [];
+		
+				let existingItem = cart.find(item => item.name === name);
+				if (existingItem) {
+					existingItem.quantity += 1;
+				} else {
+					cart.push({ name, price, image, quantity: 1 });
+				}
+		
+				localStorage.setItem("cart", JSON.stringify(cart));
+				window.location.href = "shopping-cart.html"; // Chuyển hướng đến giỏ hàng
+			}
+		</script>
 			
 	</footer>
 		
